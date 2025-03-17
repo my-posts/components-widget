@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import { ChangeEvent, ComponentType, useCallback } from 'react';
-import { InputProps } from './InputProps';
+import { ChangeEvent, ComponentType, useCallback } from "react";
+import { InputProps } from "./InputProps";
 
 export interface IntegerInputOptions {
-  min?: number,
-  max?: number
+  min?: number;
+  max?: number;
 }
 
 export function integerInput({
