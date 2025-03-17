@@ -1,0 +1,26 @@
+{
+  "private": false,
+  "name": "@my-posts/components-widget",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "rimraf dist && tsc -p tsconfig.compile.json && package-json-minifier && clean-empty-js \"dist/**/*.js\" && clean-empty-directory dist && cpy README.md dist",
+    "publish": "npm run build && cd dist && npm publish"
+  },
+  "devDependencies": {
+    "clean-empty-directory": "^2.0.0",
+    "clean-empty-js": "^2.0.1",
+    "cpy-cli": "^5.0.0",
+    "package.json-minifier": "^0.0.4",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.2"
+  },
+  "peerDependencies": {
+    "@types/react": "^19.0.10",
+    "react": "^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    }
+  }
+}
